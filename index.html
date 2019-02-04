@@ -1,0 +1,53 @@
+<html>
+  <body>
+    <script>
+      function computerPlay(){
+        let num = Math.random();
+        num = num*3;
+        if (num>=0 && num<1){
+          return("Rock");
+        }
+        else if (num>=1 && num<2){
+          return("Paper");
+        }
+        else if (num>=2 && num<=3){
+          return("Scissors");
+        }
+      }
+    // console.log(computerPlay());
+      
+      function playRound(a,b){
+        a=a.toLowerCase();
+        b=b.toLowerCase();
+        if(a=="rock" && b=="paper"){
+        return("You Lose! Paper beats Rock.");
+        }
+        else if(a=="paper" && b=="scissors"){
+          return("You Lose! Scissors beat Paper.");
+        }
+        else if(a=="scissors" && b=="rock"){
+          return("You Lose! Rock beats Scissors.");
+        }
+        else if(a=="paper" && b=="rock"){
+          return("You Win! Paper beats Rock.");
+        }
+        else if(a=="scissors" && b=="paper"){
+          return("You Win! Scissors beat Paper.");
+        }
+        else if(a=="rock" && b=="scissors"){
+          return("You Win! Rock beats Scissors.");
+        }
+        else if(a==b){
+          return("Same selection! Try again.");
+        }
+        else {
+          return("Error");
+        }
+      }
+      let playerSelection = 'roCk';
+      let computerSelection = computerPlay();
+      console.log(playRound(playerSelection,computerSelection));
+      
+    </script>
+  </body>
+</html>
