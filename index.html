@@ -38,16 +38,42 @@
           return("You Win! Rock beats Scissors.");
         }
         else if(a==b){
-          return("Same selection! Try again.");
+          return("Same selection!");
         }
         else {
-          return("Error");
+          return("You Lose!");
         }
       }
-      let playerSelection = 'roCk';
-      let computerSelection = computerPlay();
-      console.log(playRound(playerSelection,computerSelection));
+      let pscore=0;
+      let cscore=0;      
+      let result="";
+      function game(){
+        for(c=0; c<5; c++){
+          let playerSelection = prompt("Enter your move.", " ");
+          let computerSelection = computerPlay();
+          result=(playRound(playerSelection,computerSelection));
+          console.log(result);
+
+          if(result[4] == "W") {
+            pscore++;
+          }
+          else if (result[4] == "L") {
+            cscore++;
+          }
+        }
+        
+        if (pscore>cscore) {
+          console.log(pscore + " out of 5 - You win!!!");
+        }
+        else if (pscore<cscore) {
+          console.log(pscore + " out of 5 - You lose!!!");
+        }
+        else {
+          console.log(pscore + " out of 5 - It's a draw!!!");
+        }
+      }
       
+      game();
     </script>
   </body>
 </html>
