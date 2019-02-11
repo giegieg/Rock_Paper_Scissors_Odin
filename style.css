@@ -6,7 +6,7 @@ body {
 }
 
 html{
-    background-color: #CAE4E3;
+    background-color: #F3E5DA;
 }
 
 .game_name {
@@ -28,10 +28,8 @@ html{
 .main_box {
   display: flex;
   flex-direction: row;
-  /* border: 1px solid, red; */
-  width: 1000px;
-  height: 450px;
-  /* background-color: white; */
+  width: 800px;
+  height: 430px;
   margin: 0 auto;
   margin-top: 5px;
 }
@@ -40,15 +38,16 @@ html{
   display: flex;
   flex-direction: column;
   border-right: 1px solid black;
-  width: 500px;
-  height: 450px;
+  width: 400px;
+  height: 430px;
 }
 
 .human {
-  /* border: 1px solid green; */
-  width: 150px;
-  height: 160px;
+  width: 250px;
   margin: 5% auto;
+  background-color: #D8E8DE;
+  border: 1px solid grey;
+  border-radius: 3px;
 }
 
 .human p {
@@ -58,7 +57,7 @@ html{
 
 .hand1 {
 width: 350px;
-margin-top: -5%;
+margin-top: 5%;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 0;
@@ -70,16 +69,16 @@ margin-bottom: 0;
 }
 
 .right {
-  /* border-right: 1px solid red; */
-  width: 500px;
-  height: 450px;
+  width: 400px;
+  height: 430px;
 }
 
 .pc {
-  /* border: 1px solid green; */
-  width: 370px;
-  height: 160px;
+  width: 250px;
   margin: 5% auto;
+  background-color: #D8E8DE;
+  border: 1px solid grey;
+  border-radius: 3px;
 }
 
 .pc p {
@@ -89,7 +88,7 @@ margin-bottom: 0;
 
 .hand2 {
   width: 350px;
-  margin-top: -5%;
+  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
@@ -132,7 +131,7 @@ button {
   font-size: 2vw;
   color: #5B4A44;
   border: 1px solid grey;
-  border-radius: 10px;
-  background-color: #FFE3DF;
+  border-radius: 5px;
+  background-color: #D8E8DE;
   width: 250px;
 }
