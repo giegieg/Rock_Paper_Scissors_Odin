@@ -1,79 +1,38 @@
-<html>
-  <body>
-    <script>
-      function computerPlay(){
-        let num = Math.random();
-        num = num*3;
-        if (num>=0 && num<1){
-          return("rock");
-        }
-        else if (num>=1 && num<2){
-          return("paper");
-        }
-        else if (num>=2 && num<=3){
-          return("scissors");
-        }
-      }
-    // console.log(computerPlay());
-      
-      function playRound(a,b){
-        a=a.toLowerCase();
-        b=b.toLowerCase();
-        if(a=="rock" && b=="paper"){
-        return("You Lose! Paper beats Rock.");
-        }
-        else if(a=="paper" && b=="scissors"){
-          return("You Lose! Scissors beat Paper.");
-        }
-        else if(a=="scissors" && b=="rock"){
-          return("You Lose! Rock beats Scissors.");
-        }
-        else if(a=="paper" && b=="rock"){
-          return("You Win! Paper beats Rock.");
-        }
-        else if(a=="scissors" && b=="paper"){
-          return("You Win! Scissors beat Paper.");
-        }
-        else if(a=="rock" && b=="scissors"){
-          return("You Win! Rock beats Scissors.");
-        }
-        else if(a==b){
-          return("Same selection!");
-        }
-        else {
-          return("You Lose!");
-        }
-      }
-      let pscore=0;
-      let cscore=0;      
-      let result="";
-      function game(){
-        for(c=0; c<5; c++){
-          let playerSelection = prompt("Enter your move.", " ");
-          let computerSelection = computerPlay();
-          result=(playRound(playerSelection,computerSelection));
-          console.log(result);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Raleway');
+  </style>
+  <title>Document</title>
+</head>
+<body>
+    <div class="game_name"><h1>Rock, Paper, Scissors</h1></div>
+    <div class="byline"><h2>Race to 5</h2></div>
+    <div class="main_box">
+      <div class="left">
+        <div class="human"><p><strong>You</strong></p><p id="you_score">0</p></div>
+        <div class="hand1"><img class="hands" src="res/rock1a.png"></div>
+      </div>
+      <div class="right">
+          <div class="pc"><p><strong>Computer</strong></p><p id="you_score">0</p></div>
+          <div class="hand2"><img class="hands" src="res/rock2a.png"></div>
+      </div>
+    </div>
+      <div class="choice"><p>Choose your weapon:</p></div>
+      <div class ="turns">
+        <div><img class="turn" src ="res/rock.png"></div><div><img class="turn" src ="res/paper.png"></div><div><img class="turn" src ="res/scissors.png"></div>
+      </div>
+      <div class="result"><p>Rock beats Scissors - Computer scores!</p></div>
+      <div class="result_final"><p>You win!</p></div>
+      <div></div>
+      <div><button>Reset</button></div>
 
-          if(result[4] == "W") {
-            pscore++;
-          }
-          else if (result[4] == "L") {
-            cscore++;
-          }
-        }
-        
-        if (pscore>cscore) {
-          console.log(pscore + " out of 5 - You win!!!");
-        }
-        else if (pscore<cscore) {
-          console.log(pscore + " out of 5 - You lose!!!");
-        }
-        else {
-          console.log(pscore + " out of 5 - It's a draw!!!");
-        }
-      }
-      
-      game();
-    </script>
-  </body>
+      </div>
+    </div>
+</body>
 </html>

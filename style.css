@@ -1,0 +1,138 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #5B4A44;
+  text-align: center;
+  margin: 0 auto;
+}
+
+html{
+    background-color: #CAE4E3;
+}
+
+.game_name {
+  margin: 0 auto;
+}
+
+.game_name h1 {
+  font-size: 3.5vw;
+  font-weight: bold;
+  margin: 20px auto auto 0;
+}
+
+.byline h2 {
+  font-size: 2vw;
+  font-style: italic;
+  margin: 0 auto;
+}
+
+.main_box {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid, red; */
+  width: 1000px;
+  height: 450px;
+  /* background-color: white; */
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+  width: 500px;
+  height: 450px;
+}
+
+.human {
+  /* border: 1px solid green; */
+  width: 150px;
+  height: 160px;
+  margin: 5% auto;
+}
+
+.human p {
+  font-size: 1.8vw;
+  margin: 0 auto;
+}
+
+.hand1 {
+width: 350px;
+margin-top: -5%;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 0;
+}
+
+.hands {
+  max-width:100%;
+  height:auto;
+}
+
+.right {
+  /* border-right: 1px solid red; */
+  width: 500px;
+  height: 450px;
+}
+
+.pc {
+  /* border: 1px solid green; */
+  width: 370px;
+  height: 160px;
+  margin: 5% auto;
+}
+
+.pc p {
+  font-size: 1.8vw;
+  margin: 0 auto;
+}
+
+.hand2 {
+  width: 350px;
+  margin-top: -5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  }
+
+.choice {
+  margin-bottom: 10px;
+}
+.choice p {
+  font-size: 2vw;
+  margin: 0 auto;
+}
+
+.turns {
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.turn {
+  max-width:60%;
+  height:auto;
+}
+
+.result p {
+  margin: 10px auto auto 0;
+}
+.result_final {
+  font-size: 2.5vw;
+  margin: 0 auto;
+}
+.result_final p {
+  margin: 10px auto;
+}
+
+button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+  color: #5B4A44;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background-color: #FFE3DF;
+  width: 250px;
+}
