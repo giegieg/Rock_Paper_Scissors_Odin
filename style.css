@@ -93,11 +93,12 @@ margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  }
+}
 
 .choice {
   margin-bottom: 10px;
 }
+
 .choice p {
   font-size: 2vw;
   margin: 0 auto;
@@ -116,16 +117,30 @@ margin-bottom: 0;
   height:auto;
 }
 
+.turns img {
+	opacity: 1;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+
+.turns img:hover {
+	opacity: .5;
+  cursor: pointer;
+}
+
 .result {
   margin: 10px auto auto 0;
 }
+
 .result p {
   margin: 10px auto auto 0;
 }
+
 .result_final {
   font-size: 2.5vw;
   margin: 10px auto;
 }
+
 .result_final p {
   margin: 10px auto;
 }
@@ -138,4 +153,13 @@ button {
   border-radius: 5px;
   background-color: #D8E8DE;
   width: 250px;
+  opacity: 1;
+	-webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: .5;
+  cursor: pointer;
 }
