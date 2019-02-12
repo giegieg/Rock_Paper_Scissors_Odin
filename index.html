@@ -15,24 +15,25 @@
     <div class="byline"><h2>Race to 5</h2></div>
     <div class="main_box">
       <div class="left">
-        <div class="human"><p>You</p><p id="you_score"><strong>0</strong></p></div>
-        <div class="hand1"><img class="hands" src="res/p.png"></div>
+        <div class="human"><p>You</p><p id="user_score"><strong>0</strong></p></div>
+        <div class="hand1"><img class="user_hands" src="res/ok.png"></div>
       </div>
       <div class="right">
           <div class="pc"><p>Computer</p><p id="pc_score"><strong>0</strong></p></div>
-          <div class="hand2"><img class="hands" src="res/r2.png"></div>
+          <div class="hand2"><img class="pc_hands" src="res/ok2.png"></div>
       </div>
     </div>
       <div class="choice"><p>Choose your weapon:</p></div>
       <div class ="turns">
-        <div><img class="turn" src ="res/rock.png"></div><div><img class="turn" src ="res/paper.png"></div><div><img class="turn" src ="res/scissors.png"></div>
+        <div><img class="turn" id ="rock" src ="res/rock.png"></div><div><img class="turn" id="paper" src ="res/paper.png"></div><div><img class="turn" id="scissors" src ="res/scissors.png"></div>
       </div>
-      <div class="result"><p>Rock beats Scissors - Computer scores!</p></div>
-      <div class="result_final"><p>You win!</p></div>
+      <div class="result"><p></p></div>
+      <div class="result_final"><p></p></div>
       <div></div>
       <div><button>Reset</button></div>
 
       </div>
     </div>
+    <script src="myScript.js"></script>
 </body>
 </html>
