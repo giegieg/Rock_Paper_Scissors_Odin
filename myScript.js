@@ -39,7 +39,7 @@ scissors1.removeEventListener("click", scissorsClick);
 //click on rock
 function rockClick() {
   userHand.src="res/r.png";
-
+  const audio = new Audio('res/stone.mp3'); audio.play();
   const computerSelection = computerPlay();
   if (computerSelection == "rock") {
     pcHand.src="res/r2.png";
@@ -76,7 +76,7 @@ function rockClick() {
 //click on paper
 function paperClick() {
   userHand.src="res/p.png";
-
+  const audio = new Audio('res/paper.m4a'); audio.play();
   let computerSelection = computerPlay();
 
   if (computerSelection == "rock") {
@@ -114,7 +114,7 @@ function paperClick() {
 //click on scissors
 function scissorsClick() {
   userHand.src="res/s.png";
-
+  const audio = new Audio('res/scissors.m4a'); audio.play();
   let computerSelection = computerPlay();
 
   if (computerSelection == "rock") {
